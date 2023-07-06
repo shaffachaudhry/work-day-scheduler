@@ -1,8 +1,18 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
+    background-color: #dde0e1;
   }
   
+  :root{
+    --undertones:#98c1d9;
+    --overtone: #a1b6b7;
+    --highlight: #ee6c4d; 
+    --accent: #e0fbfc;
+    --button: #293241;
+  }
+
+
   textarea {
     background: transparent;
     border: none;
@@ -11,45 +21,59 @@ body {
     border-left: 1px solid black;
     padding: 10px;
   }
-  
+
+  .head {
+    text-align: center;
+    color: #000000;
+    border-bottom: 7px solid black;
+    padding-bottom: 30px;
+    background-color: var(--overtone);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .container {
+    padding-top: 10px;
+  }
   .description {
     white-space: pre-wrap;
   }
   
   .time-block {
-    border-radius: 15px;
+    border-radius: 30px;
+    background-color: var(--button);
   }
   
   .row {
-    border-top: 1px solid white;
+    border-top: 1px solid black;
   }
   
   .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
+    background-color: var(--button);
+    color: #ffffff;
+    border-top:1px solid black;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: var(--accent);
     color: white;
   }
   
   .present {
-    background-color: #ff6961;
+    background-color: var(--highlight);
     color: white;
   }
   
   .future {
-    background-color: #77dd77;
+    background-color:var(--undertones);
     color: white;
   }
   
   .saveBtn {
-    border-left: 1px solid black;
+    border-left: 2px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06aed5;
+    background-color:var(--button);
     color: white;
   }
   
