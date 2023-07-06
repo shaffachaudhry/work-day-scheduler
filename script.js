@@ -1,7 +1,6 @@
 
-//display current date
-  var today = moment().format('dddd, MMM Do YYYY');
-  $("#currentDay").html(today);
+var today = dayjs();
+$('#currentDay').text(today.format('dddd, MMM D, YYYY'));
 
   $(document).ready(function () {
     $(".saveBtn").on("click", function () {
